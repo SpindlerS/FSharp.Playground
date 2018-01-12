@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Chess.Core", "Chess.Core\Chess.Core.fsproj", "{8957A3A9-E98C-439C-8F0E-B9AC26CD21BB}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chess.CoreTests", "Chess.CoreTests\Chess.CoreTests.fsproj", "{2D5F0911-DC30-4011-90A1-740E1094E779}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Chess.CoreTests", "Chess.CoreTests\Chess.CoreTests.fsproj", "{7048BB62-0D21-4197-8472-4A5350828DDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{8957A3A9-E98C-439C-8F0E-B9AC26CD21BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8957A3A9-E98C-439C-8F0E-B9AC26CD21BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8957A3A9-E98C-439C-8F0E-B9AC26CD21BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2D5F0911-DC30-4011-90A1-740E1094E779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D5F0911-DC30-4011-90A1-740E1094E779}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D5F0911-DC30-4011-90A1-740E1094E779}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D5F0911-DC30-4011-90A1-740E1094E779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7048BB62-0D21-4197-8472-4A5350828DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7048BB62-0D21-4197-8472-4A5350828DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7048BB62-0D21-4197-8472-4A5350828DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7048BB62-0D21-4197-8472-4A5350828DDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
