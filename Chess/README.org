@@ -55,3 +55,10 @@ This can use either a simple ASCII command-line interface or a more elaborate gr
 - [ ] Save and replay games in a standard format
 - [ ] Analyze positions, e.g. mate-in-N-moves
     
+* Links
+
+- [[https://de.wikipedia.org/wiki/Schach][Schach]]
+- [[https://de.wikipedia.org/wiki/Schachnotation][Schachnotation]]
+  - [[https://de.wikipedia.org/wiki/Portable_Game_Notation][PGN]]
+  - [[https://de.wikipedia.org/wiki/Forsyth-Edwards-Notation][FEN]]
+  - [[https://de.wikipedia.org/wiki/GBR-Code][GBR]]
