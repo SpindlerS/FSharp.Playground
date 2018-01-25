@@ -1,0 +1,57 @@
+#+Title: Game of Chess
+
+* Tasks
+
+** Move generation
+
+Generate a list of valid moves given a chess game position and the side-to-move.
+
+*** Basic implementation
+
+- [ ] Moves based on piece type
+- [ ] Promotion to queen
+- [ ] Allow resignation 
+
+*** Advanced implementation
+
+- [ ] Castling (not through check)
+- [ ] En-passant capture
+- [ ] All promotions
+- [ ] Move legality for moving in/out of check
+- [ ] Draw by repetition and 50-move rule
+
+** Search and evaluation
+
+Create a function which will search the tree of moves from a given chess position up to a maximum depth and determine the best move 
+for the computer. Use a previously written Chess player/Move generation component for enumerating the moves. 
+This is where a lot of effort has been spent to improve chess-playing programs, so you can create a basic version or 
+implement some of the features mentioned below to get a faster or cleverer version.
+
+*** Basic implementation
+
+- [ ] min-max search
+- [ ] static evaluation based on material (numbers and types of pieces)
+
+** GUI
+
+Write a driver or main loop which will allow a user to play a game against the computer. 
+This can use either a simple ASCII command-line interface or a more elaborate graphical interface.
+
+*** Basic implementation
+
+- [ ] Allow player to choose colour
+- [ ] Validate user-entered moves
+- [ ] Show updated board position after each move
+- [ ] Detect and show Checkmate and Stalemate
+
+*** Advanced implementation
+
+- [ ] Time controls
+- [ ] Detect drawn positions
+- [ ] Chess engine interface: UCI, CECP or XBoard
+- [ ] Use an opening book
+- [ ] Show principal variation during search
+- [ ] Computer thinking on opponent's time
+- [ ] Save and replay games in a standard format
+- [ ] Analyze positions, e.g. mate-in-N-moves
+    
