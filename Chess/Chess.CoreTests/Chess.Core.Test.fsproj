@@ -11,10 +11,14 @@
     <PackageReference Include="nunit" Version="3.9.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="Expecto" Version="5.1.2" />
+    <PackageReference Include="Expecto.VisualStudio.TestAdapter" Version="6.0.1" />
+    <PackageReference Include="Expecto.FsCheck" Version="5.1.2" />
+    <PackageReference Include="Expecto.BenchmarkDotNet" Version="5.1.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="InitialGameStateUnitTests.fs" />
+    <Compile Include="PositionTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

@@ -1,11 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
-    <Compile Include="Library.fs" />
+    <Compile Include="Chess.fs" />
+    <None Include="Demo.fsx" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.0" />
   </ItemGroup>
-
 </Project>

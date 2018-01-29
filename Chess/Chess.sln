@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Chess.Core", "Chess.Core\Chess.Core.fsproj", "{8957A3A9-E98C-439C-8F0E-B9AC26CD21BB}"
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Chess.Core", "Chess.Core\Chess.Core.fsproj", "{8957A3A9-E98C-439C-8F0E-B9AC26CD21BB}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Chess.CoreTests", "Chess.CoreTests\Chess.CoreTests.fsproj", "{7048BB62-0D21-4197-8472-4A5350828DDF}"
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Chess.Core.Test", "Chess.CoreTests\Chess.Core.Test.fsproj", "{7048BB62-0D21-4197-8472-4A5350828DDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
