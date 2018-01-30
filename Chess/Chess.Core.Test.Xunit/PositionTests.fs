@@ -35,24 +35,25 @@ module PositionTests =
         
     [<Fact>]
     let  ``Initial game state should contain eight black pawns in row seven`` () =
-        initialPosition.PiecePlacement |> Map.toSeq
+        initialPosition.PiecePlacement 
+        |> Map.toSeq
         |> Seq.filter (fun (_, piece) -> piece = Black Pawn)
         |> Seq.map (fun (OnBoard (c, r):OnBoardPosition, _) -> r)
         |> Set.ofSeq
         |> shouldEqual ([Row 7] |> Set.ofSeq)
     
-    let theoryData = new TheoryData<OnBoardPosition,Piece>()
-    theoryData.Add(OnBoard(Col 1, Row 1), White Rook)
-    theoryData.Add(OnBoard(Col 8, Row 1), White Rook)
-    theoryData.Add(OnBoard(Col 2, Row 1), White Knight)
-    theoryData.Add(OnBoard(Col 7, Row 1), White Knight)
-    theoryData.Add(OnBoard(Col 3, Row 1), White Bishop)
-    theoryData.Add(OnBoard(Col 6, Row 1), White Bishop)
-    theoryData.Add(OnBoard(Col 4, Row 1), White Queen)
-    theoryData.Add(OnBoard(Col 5, Row 1), White King)
+    let initialBordPositions = new TheoryData<OnBoardPosition,Piece>()
+    initialBordPositions.Add(OnBoard(Col 1, Row 1), White Rook)
+    initialBordPositions.Add(OnBoard(Col 8, Row 1), White Rook)
+    initialBordPositions.Add(OnBoard(Col 2, Row 1), White Knight)
+    initialBordPositions.Add(OnBoard(Col 7, Row 1), White Knight)
+    initialBordPositions.Add(OnBoard(Col 3, Row 1), White Bishop)
+    initialBordPositions.Add(OnBoard(Col 6, Row 1), White Bishop)
+    initialBordPositions.Add(OnBoard(Col 4, Row 1), White Queen)
+    initialBordPositions.Add(OnBoard(Col 5, Row 1), White King)
    
     [<Theory>]
-    [<MemberData("theoryData")>] 
+    [<MemberData("initialBordPositions")>] 
     let ``Initial game state should contain the correct white non-pawn pieces`` (pos:OnBoardPosition, piece:Piece) =      
         let actual = initialPosition.PiecePlacement.TryFind pos = Some piece
         Assert.True(actual)
