@@ -5,6 +5,5 @@
   <ItemGroup>
     <Compile Include="Chess.fs" />
     <None Include="Demo.fsx" />
-    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.0" />
   </ItemGroup>
 </Project>

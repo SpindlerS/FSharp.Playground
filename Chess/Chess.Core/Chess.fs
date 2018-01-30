@@ -91,7 +91,7 @@ module Position =
             PiecePlacement  : Map<OnBoardPosition,Piece>
             ActiveColor     : Color
             CastleOptions   : Castling list
-            EnPassentTarget : Position list
+            EnPassentTarget : OnBoardPosition option
             HalfmoveClock   : int
             FullMoveNo      : int
         }  
@@ -113,8 +113,8 @@ module Position =
                             |> Seq.map (fun (c:Castling) -> c.Notation()) 
                             |> Seq.fold (+) ""
             let ep = match x.EnPassentTarget with 
-                        | [] -> "-"
-                        | _ -> "e.p."
+                        | None -> "-"
+                        | Some p -> p.Notation()
             let hm = x.HalfmoveClock.ToString()
             let fm = x.FullMoveNo.ToString()
             let result = [pp;ac;co;ep;hm;fm] 
@@ -142,7 +142,7 @@ module Position =
             ActiveColor     = W;
             CastleOptions   = castlingOptions; 
             HalfmoveClock   = 0;
-            EnPassentTarget = [];
+            EnPassentTarget = None;
             FullMoveNo      = 1
         }
     

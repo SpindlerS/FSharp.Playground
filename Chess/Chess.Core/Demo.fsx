@@ -38,6 +38,17 @@ pi.Notation()
 
 initialPosition.Notation()
 
+let samplePosition = 
+        {
+            PiecePlacement  = initialPiecePlacement;
+            ActiveColor     = B;
+            CastleOptions   = castlingOptions; 
+            HalfmoveClock   = 1;
+            EnPassentTarget = Some (OnBoard (Col 5, Row 3));
+            FullMoveNo      = 1
+        }
+samplePosition.Notation()
+
 Notation (Some (Black King))  
 Notation None 
 initialPiecePlacement.TryFind(OnBoard (Col 5, Row 8))

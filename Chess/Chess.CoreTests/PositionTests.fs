@@ -3,7 +3,6 @@ namespace Chess.Core.Test
 open NUnit.Framework
 open FsUnitTyped.TopLevelOperators
 open Chess.Core.Position
-open Expecto
 
 module PositionTests =
 
@@ -70,3 +69,9 @@ module PositionTests =
             ]
             |> Map.ofSeq
             |> Map.iter ``Initial game position should contain a given piece``
+        
+        [<Test>]
+        member __.``Initial game state should have the following notation`` () =
+            initialPosition.Notation()
+            |> shouldEqual "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+ 

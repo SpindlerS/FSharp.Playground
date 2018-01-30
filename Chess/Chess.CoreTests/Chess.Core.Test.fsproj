@@ -1,29 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="FsUnit" Version="3.0.0" />
-    <PackageReference Include="nunit" Version="3.9.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
-    <PackageReference Include="Expecto" Version="5.1.2" />
-    <PackageReference Include="Expecto.VisualStudio.TestAdapter" Version="6.0.1" />
-    <PackageReference Include="Expecto.FsCheck" Version="5.1.2" />
-    <PackageReference Include="Expecto.BenchmarkDotNet" Version="5.1.2" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="PositionTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Chess.Core\Chess.Core.fsproj" />
+    <ProjectReference Include="..\Chess.Core\Chess.Core.fsproj" />
   </ItemGroup>
-
 </Project>
